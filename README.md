@@ -4,3 +4,4 @@ En el presente, realizamos la presentación de los integrantes que conformaran e
 
 # Integrantes
 - Omar Andŕes Zambrano Arias (Product Owner)
+- Neyder Alfredo Perilla Lopez (Desarrollador)
