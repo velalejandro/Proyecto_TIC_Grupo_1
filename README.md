@@ -6,3 +6,4 @@ En el presente, realizamos la presentación de los integrantes que conformaran e
 - Omar Andŕes Zambrano Arias (Product Owner)
 - Neyder Alfredo Perilla Lopez (Desarrollador)
 - Natalia Luque (SCRUM MASTER)
+- John Jairo Arévalo Hoyos (Analista)
