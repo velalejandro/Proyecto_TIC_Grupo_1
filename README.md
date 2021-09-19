@@ -7,3 +7,4 @@ En el presente, realizamos la presentación de los integrantes que conformaran e
 - Neyder Alfredo Perilla Lopez (Desarrollador)
 - Natalia Luque (SCRUM MASTER)
 - John Jairo Arévalo Hoyos (Analista)
+- Alejandro Vela Muñoz (Administrador Bases de Datos)
