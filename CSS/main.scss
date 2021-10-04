@@ -93,3 +93,20 @@ $colorGris: #cbcbcb;
     width: 83%;
     height: 7%;
 }
+
+// Tabla de listar usuarios
+#TableBoostrap{
+    position: absolute;
+    top: 9%;
+    left: 8%;
+    width: 100%;
+    height:auto;
+    max-width: 90%;
+    transition: all 500ms linear;
+    // background-color: rgb(5, 10, 1);
+}
+
+#TableBoostrap.active{
+    left: 18%;
+    max-width: 80%;
+}
