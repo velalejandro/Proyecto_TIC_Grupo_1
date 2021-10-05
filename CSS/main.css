@@ -103,11 +103,19 @@
   left: 18%;
   max-width: 80%;
 }
+<<<<<<< Updated upstream
 #Formulario{
+=======
+<<<<<<< Updated upstream
+=======
+
+#Formulario {
+>>>>>>> Stashed changes
   position: absolute;
   top: 9%;
   left: 8%;
   width: 100%;
+<<<<<<< Updated upstream
   height:auto;
   max-width: 90%;
   transition: all 500ms linear;
@@ -132,3 +140,12 @@
   color: #ffff;
 
 }
+=======
+  height: auto;
+  max-width: 90%;
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
+}
+>>>>>>> Stashed changes
+/*# sourceMappingURL=main.css.map */
+>>>>>>> Stashed changes
