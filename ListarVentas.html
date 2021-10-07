@@ -159,6 +159,49 @@
         </table>
     </div>
     <!-- Fin tabla -->
+    <hr>
+ <div class="row  marginFormu">
+     <h1 class="tituloForm">NUEVA VENTA</h1>
+  <div class="col-12">
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputProductCode" class="form-label">Código del Producto</label>
+          <input class="form-control" type="number" name="inputProductCode">
+        </div>
+        <div class="col-md-6">
+          <label for="nombreProduct" class="form-label">Nombre del Producto</label>
+          <input class="form-control" type="text" name="inputProductCode" readonly type="text" value="Nombre traido de BD server">
+        </div>
+        <div class="col-md-6">
+          <label for="cantidadProduct" class="form-label">Cantidad</label>
+          <input type="number" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label for="valorUnit" class="form-label" >Valor unitario</label>
+          <div class="input-group">
+            <div class="input-group-text">$</div>
+            <input type="number" class="form-control" readonly>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="nombreProduct" class="form-label">Fecha</label>
+          <input class="form-control" type="datetime-local" name="dateShop" readonly>
+        </div>
+        <div class="col-md-6">
+          <label for="valorUnit" class="form-label" >Valor Total</label>
+          <div class="input-group">
+            <div class="input-group-text">$</div>
+            <input type="number" class="form-control" readonly>
+          </div>
+        </div>
+        <div class="col-12" id="botonAdd">
+          <button  type="submit" class="btn btn-primary" id="saveEdit" onclick="clickChange()">Añadir</button>
+        </div>
+      </form>
+    </div>
+</div>
+<hr/>
+<!--Fin formulario-->
     </main>
 
     <!-- Inicio Boostra -->
