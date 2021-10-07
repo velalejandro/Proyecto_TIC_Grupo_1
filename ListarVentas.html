@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestonar ventas</title>
 
-    <link rel="stylesheet" href="/css/StylesNav.css">
+    <link rel="stylesheet" href="/css/listarVentasStyles.css">
 
     <!-- Inicio Boostra -->
         <!-- Bootstrap CSS -->
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <!-- datatables -->
-        <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css"> -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
         <!-- datatables extension SELECT -->
-        <!-- <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css"> -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css">
         <!-- extension BOTONES -->
-        <!-- <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css"> -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
     <!-- Fin Boostra -->
     
     
@@ -27,135 +27,133 @@
     </script>
 </head>
 <body>
-    <main>
-        <section class="nav">
-            <nav id="herramientas">
-                <div class="organizar-herramientas">
-                    <h3 class="tituloH">Herramientas</h3>
-                    <h5 class="fecha-hoy">Fecha de Hoy</h5>
-                    <div class="separarH"></div>
-                    <ul>
-                        <li><a href=""></i>Inicio</a></li>
-                        <li><a href="">Papelera</a></li>
-                    </ul>
-                    
-                    <div class="separar"></div>
-                    <ul>
-                        <li><a href="">Calendario</a></li>
-                        <li><a href="">Información de la página</a></li>
-                        <li><a href="">Administrar Usuarios</a></li>
-                        <li><a href="">Administrar Vendedores</a></li>
-                        <li><a href="">Administrar Roles</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <!-- Slieder  -->
+    <iframe src="nav.html" frameborder="0"></iframe>
+    <!-- FIn de Slieder  -->
 
-            <div class="nav-bar">
-                <img src="/Recursos-graficos/logo-blanco.png" alt="" class="logo">
-                <i class="fas fa-sign-out-alt"></i>
-                <i class="fas fa-question-circle"></i>
-                <i class="fas fa-cog"></i>
-                <i class="fas fa-bell"></i>
-                <div class="spans">
-                    <div class="menu-wrapper">
-                        <div class="hamburger-menu"></div>	  
-                    </div>
-                </div>
-            </div>
-            
-        </section>
-        <section class="funtion-buttons">
-            <div class="add"><button class="add-button"></button>Agregar</div>
-            <div class="select-busqueda">Seleccione el tipo de búsqueda</div>
-            <div class="busqueda"><input type="text" placeholder="Buscar"></div>
-            <div class="productos-ventas">
-                <button class="productos">Productos</button>
-                <button class="ventas">Ventas</button>
-            </div>
-            <div class="titulo-pagina">
-                <h4 class="tituloP">Gestión de Ventas y Productos</h4>
-            </div>
-            <div class="personalizar-lista"></div>
-        
-        </section>
     <!-- Tabla de listar clientes  -->
     <div id="TableBoostrap">
-        <table id="example" class="display" style="width:100%">
-        <!-- <table class="table table-responsive table-bordered"> -->
-        <!-- <table id=”tabla1″ class=”table stacktable” border=”0″></table> -->
-        <!-- <table class="table table-responsive"> -->
-            <thead>
-                <tr>                
-                    <th>CODIGO</th>
-                    <th>FECHA</th>
-                    <th>CANTIDAD</th>
-                    <th>PRODUCTO</th>
-                    <th>VALOR VENTA</th>
-                </tr>
-            </thead>
+        <table class="table table-hover">
             <tbody>
                 <tr>
+                    <th>PRODUCTO</th> 
+                    <th>CÓDIGO</th>
+                    <th>FECHA</th>
+                    <th>CANTIDAD</th>
+                    <th>VALOR VENTA</th>
+                    
+                </tr>
+                <tr>
+                    <td>Cables cohaxiales</td>
                     <td>001</td>
                     <td>01/09/2021</td>
                     <td>38</td>
-                    <td>Cables cohaxiales</td>
-                    <td>70000</td>
+                    <td>70.000</td>
                 </tr>
                 <tr>
-                    <td>002</td>
-                    <td>01/09/2021</td>
-                    <td>38</td>
                     <td>Cables cohaxiales</td>
-                    <td>70000</td>
-                </tr>
-                <tr>
                     <td>001</td>
                     <td>01/09/2021</td>
                     <td>38</td>
-                    <td>Cables cohaxiales</td>
-                    <td>70000</td>
+                    <td>70.000</td>
                 </tr>
                 <tr>
+                    <td>Cables cohaxiales</td>
                     <td>001</td>
                     <td>01/09/2021</td>
                     <td>38</td>
+                    <td>70.000</td>
+                </tr>
+                <tr>
                     <td>Cables cohaxiales</td>
-                    <td>70000</td>
+                    <td>001</td>
+                    <td>01/09/2021</td>
+                    <td>38</td>
+                    <td>70.000</td>
                 </tr>
                 <tr>
-                    <td>Airi Satou</td>
-                    <td>Accountant</td>
-                    <td>Tokyo</td>
-                    <td>33</td>
-                    <td>2008/11/28</td>
+                    <td>Cables cohaxiales</td>
+                    <td>001</td>
+                    <td>01/09/2021</td>
+                    <td>38</td>
+                    <td>70.000</td>
                 </tr>
                 <tr>
-                    <td>Brielle Williamson</td>
-                    <td>Integration Specialist</td>
-                    <td>New York</td>
-                    <td>61</td>
-                    <td>2012/12/02</td>
+                    <td>Cables cohaxiales</td>
+                    <td>001</td>
+                    <td>01/09/2021</td>
+                    <td>38</td>
+                    <td>70.000</td>
                 </tr>
                 <tr>
-                    <td>Herrod Chandler</td>
-                    <td>Sales Assistant</td>
-                    <td>San Francisco</td>
-                    <td>59</td>
-                    <td>2012/08/06</td>
+                    <td>Cables cohaxiales</td>
+                    <td>001</td>
+                    <td>01/09/2021</td>
+                    <td>38</td>
+                    <td>70.000</td>
                 </tr>
                 <tr>
-                    <td>Rhona Davidson</td>
-                    <td>Integration Specialist</td>
-                    <td>Tokyo</td>
-                    <td>55</td>
-                    <td>2010/10/14</td>
+                    <td>Cables cohaxiales</td>
+                    <td>001</td>
+                    <td>01/09/2021</td>
+                    <td>38</td>
+                    <td>70.000</td>
                 </tr>
                 <tr>
-                    <td>Colleen Hurst</td>
-                    <td>Javascript Developer</td>
-                    <td>San Francisco</td>
-                    <td>39</td>
-                    <td>2009/09/15</td>
+                    <td>Cables cohaxiales</td>
+                    <td>001</td>
+                    <td>01/09/2021</td>
+                    <td>38</td>
+                    <td>70.000</td>
+                </tr>
+                <tr>
+                    <td>Cables cohaxiales</td>
+                    <td>001</td>
+                    <td>01/09/2021</td>
+                    <td>38</td>
+                    <td>70.000</td>
+                </tr>
+                <tr>
+                    <td>Cables cohaxiales</td>
+                    <td>001</td>
+                    <td>01/09/2021</td>
+                    <td>38</td>
+                    <td>70.000</td>
+                </tr>
+                <tr>
+                    <td>Cables cohaxiales</td>
+                    <td>001</td>
+                    <td>01/09/2021</td>
+                    <td>38</td>
+                    <td>70.000</td>
+                </tr>
+                <tr>
+                    <td>Cables cohaxiales</td>
+                    <td>001</td>
+                    <td>01/09/2021</td>
+                    <td>38</td>
+                    <td>70.000</td>
+                </tr>
+                <tr>
+                    <td>Cables cohaxiales</td>
+                    <td>001</td>
+                    <td>01/09/2021</td>
+                    <td>38</td>
+                    <td>70.000</td>
+                </tr>
+                <tr>
+                    <td>Cables cohaxiales</td>
+                    <td>001</td>
+                    <td>01/09/2021</td>
+                    <td>38</td>
+                    <td>70.000</td>
+                </tr>
+                <tr>
+                    <td>Cables cohaxiales</td>
+                    <td>001</td>
+                    <td>01/09/2021</td>
+                    <td>38</td>
+                    <td>70.000</td>
                 </tr>
             </tbody>
         </table>
@@ -172,6 +170,6 @@
      -->
     <!-- Fin Boostra -->
 
-  <script src="/js/funtionsNav.js"></script>
+  <script src="/js/funtionsListarVentas.js"></script>
 </body>
 </html>

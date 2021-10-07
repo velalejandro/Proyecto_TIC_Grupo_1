@@ -17,30 +17,35 @@
             <nav id="herramientas">
                 <div class="organizar-herramientas">
                     <h3 class="tituloH">Herramientas</h3>
-                    <h5 class="fecha-hoy">Fecha de Hoy</h5>
+                    <h5 id="fecha" class="fecha-hoy">Fecha de Hoy</h5>
                     <div class="separarH"></div>
                     <ul>
-                        <li><a href=""></i>Inicio</a></li>
-                        <li><a href="">Papelera</a></li>
+                        
+                        <li><a href="#"><i class="fas fa-home"></i>Inicio</a></li>
+                        <li><a href="#"><i class="fas fa-trash"></i>Papelera</a></li>
                     </ul>
                     
                     <div class="separar"></div>
                     <ul>
-                        <li><a href="">Calendario</a></li>
-                        <li><a href="">Información de la página</a></li>
-                        <li><a href="">Administrar Usuarios</a></li>
-                        <li><a href="">Administrar Vendedores</a></li>
-                        <li><a href="">Administrar Roles</a></li>
+                        <li><a href="#"><i class="fas fa-box-open"></i>Productos</a></li>
+                        <li><a href="/ListarVentas.html"><i class="fas fa-dollar-sign"></i>Ventas</a></li>
+                        <li><a href="#"><i class="fas fa-users"></i>Administrar Usuarios</a></li>
+                        <li><a href="#"><i class="fas fa-user-check"></i>Administrar Vendedores</a></li>
+                        <li><a href="#"><i class="fas fa-house-user"></i>Administrar Roles</a></li>
                     </ul>
                 </div>
             </nav>
 
             <div class="nav-bar">
                 <img src="/Recursos-graficos/logo-blanco.png" alt="" class="logo">
-                <i class="fas fa-sign-out-alt"></i>
+                <span>
+                <i class="fas fa-bell"></i>
                 <i class="fas fa-question-circle"></i>
                 <i class="fas fa-cog"></i>
-                <i class="fas fa-bell"></i>
+
+
+                <i class="fas fa-sign-out-alt"></i>
+                </span>
                 <div class="spans">
                     <div class="menu-wrapper">
                         <div class="hamburger-menu"></div>	  
@@ -49,20 +54,7 @@
             </div>
             
         </section>
-        <section class="funtion-buttons">
-            <div class="add"><button class="add-button"></button>Agregar</div>
-            <div class="select-busqueda">Seleccione el tipo de búsqueda</div>
-            <div class="busqueda"><input type="text" placeholder="Buscar"></div>
-            <div class="productos-ventas">
-                <button class="productos">Productos</button>
-                <button class="ventas">Ventas</button>
-            </div>
-            <div class="titulo-pagina">
-                <h4 class="tituloP">Gestión de Ventas y Productos</h4>
-            </div>
-            <div class="personalizar-lista"></div>
         
-        </section>
     </main>
   <script src="/js/funtionsNav.js"></script>
 </body>

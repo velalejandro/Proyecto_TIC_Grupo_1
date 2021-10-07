@@ -40,8 +40,12 @@ body {
   left: 0;
 }
 
+ul {
+  margin-left: -35px;
+}
+
 .organizar-herramientas {
-  margin: 30px;
+  margin: 20px;
 }
 
 li {
@@ -55,6 +59,66 @@ li {
   cursor: pointer;
 }
 
+/*------------------*/
+.fa-home {
+  margin-right: 10px;
+}
+
+.fa-trash {
+  margin-right: 10px;
+}
+
+.fa-box-open {
+  margin-right: 10px;
+}
+
+.fa-dollar-sign {
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
+.fa-users {
+  margin-right: 10px;
+}
+
+.fa-user-check {
+  margin-right: 10px;
+}
+
+.fa-house-user {
+  margin-right: 10px;
+}
+
+/*------------------*/
+.fa-home:hover {
+  color: #0066D4;
+}
+
+.fa-trash:hover {
+  color: #0066D4;
+}
+
+.fa-box-open:hover {
+  color: #0066D4;
+}
+
+.fa-dollar-sign:hover {
+  color: #0066D4;
+}
+
+.fa-users:hover {
+  color: #0066D4;
+}
+
+.fa-user-check:hover {
+  color: #0066D4;
+}
+
+.fa-house-user:hover {
+  color: #0066D4;
+}
+
+/*------------------*/
 a {
   text-decoration: none;
   color: #212121;
@@ -180,14 +244,12 @@ a:hover {
   height: 55px;
 }
 
-i {
+span {
   position: absolute;
+  bottom: 60px;
   padding: 17px;
-  left: 0;
-  right: 0;
-  bottom: 0;
   margin: auto;
-  font-size: 26px;
+  font-size: 25px;
   color: white;
   cursor: pointer;
 }
@@ -197,19 +259,19 @@ i:hover {
 }
 
 .fa-sign-out-alt {
-  bottom: 62px;
+  margin-top: 20px;
 }
 
 .fa-question-circle {
-  bottom: 120px;
+  margin-top: 20px;
 }
 
 .fa-cog {
-  bottom: 180px;
+  margin-top: 20px;
 }
 
 .fa-bell {
-  bottom: 240px;
+  margin-top: 20px;
 }
 
 .funtion-buttons {
