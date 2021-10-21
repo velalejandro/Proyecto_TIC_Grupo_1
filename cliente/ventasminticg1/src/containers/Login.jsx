@@ -1,14 +1,16 @@
 import React from 'react';
-class Login extends React.Component{
-    render(){
-        return(
-            <div>
-                <main>
+import '../styles/styles.css';
+import '../Recursos-graficos/Google.png';
+import '../Recursos-graficos/logo-color.png';
+
+const Login = () => {
+    return(
+        <main>
         <section>
           <div className="imagen-login">
           </div>
           <div className="inicio-login">
-            <img className="logo" src="assets/Recursos-graficos/logo-color.png" alt='logoEmpresa'/>
+            <img className="logo" src='../Recursos-graficos/logo-color.png' alt="logo"/>
             <h3 className="texto-login">Iniciar Sesión</h3>
             <div className="inputs">
               <input type="text" id="email" name="email" className="email-login" placeholder="Correo Electrónico" />
@@ -30,15 +32,13 @@ class Login extends React.Component{
             <div className="separador" />
             <br />
             <button className="google">
-              <div className="imagen-google"><img className="img" src='/assets/Recursos-graficos/Google.png' alt='googleLogo' /></div>GOOGLE</button>
+              <div className="imagen-google"><img className="img" src="../Recursos-graficos/Google.png" alt="google" /></div>GOOGLE</button>
             <br />
-            <a href="nav"><button className="enter-login">Entrar</button></a>
+            <a href="ListarVentas.html"><button className="enter-login">Entrar</button></a>
           </div> 
         </section>
       </main>
-            </div>
 
-        )
-    }
+    );
 }
 export default Login;
