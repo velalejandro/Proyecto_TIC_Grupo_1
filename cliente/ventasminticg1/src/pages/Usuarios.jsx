@@ -1,5 +1,6 @@
 
 import React from 'react'
+import SideBar from '../components/SideBar'
 import '../styles/bootstrap.css'
 
 
@@ -7,6 +8,7 @@ const Usuarios = () =>{
     return (
         
       <div>
+        <div><SideBar /></div>
         <div className="container tabla">
           <div id="agregar" className="row">
             <div className="col-12 text-center">

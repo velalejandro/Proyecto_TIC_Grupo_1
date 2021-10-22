@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import '../styles/StylesNav.css'
 
 
@@ -14,73 +15,53 @@ const SideBar = () =>{
               <div className="separarH" />
               <ul>
                 <li>
-                  <a href="/">
+                  <Link to= "/">
                     <i className="fas fa-home" />
                     Inicio
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/">
+                  <Link to="/login">
                     <i className="fas fa-trash" />
                     Papelera
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <div className="separar" />
               <ul>
                 <li>
-                  <a href="/">
+                  <Link to="/productos">
                     <i className="fas fa-box-open" />
                     Productos
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/ListarVentas.html">
+                  <Link to="/">
                     <i className="fas fa-dollar-sign" />
                     Ventas
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/">
+                  <Link to="/usuarios">
                     <i className="fas fa-users" />
                     Administrar Usuarios
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/">
+                  <Link to="/">
                     <i className="fas fa-user-check" />
                     Administrar Vendedores
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/">
+                  <Link to="/">
                     <i className="fas fa-house-user" />
                     Administrar Roles
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
           </nav>
-          <div className="nav-bar">
-            <img
-              src="/Recursos-graficos/logo-blanco.png"
-              alt=""
-              className="logo"
-            />
-            <span>
-              <i className="fas fa-bell" />
-              <i className="fas fa-question-circle" />
-              <i className="fas fa-cog" />
-              <a className="sign-out" href="/index.html">
-                <i className="fas fa-sign-out-alt" />
-              </a>
-            </span>
-            <div className="spans">
-              <div className="menu-wrapper">
-                <div className="hamburger-menu" />
-              </div>
-            </div>
-          </div>
         </div>
         
     );

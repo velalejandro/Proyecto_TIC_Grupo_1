@@ -24,13 +24,11 @@ body {
 #herramientas {
   top: 0;
   bottom: -5px;
-  margin-left: 60px;
   padding: 8px;
   width: 250px;
   height: 100%;
   position: fixed;
   background: #E4F2FE;
-  left: -330px;
   font-family: sans-serif;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;

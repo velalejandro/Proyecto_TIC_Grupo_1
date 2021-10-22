@@ -1,9 +1,11 @@
 import React from 'react'
+import SideBar from '../components/SideBar'
 import '../styles/bootstrap.css'
 
 const Productos = ()=>{
     return (
       <div>
+        <SideBar />
         <div id="TableBoostrap">
           <table className="table table-hover">
             <tbody>
