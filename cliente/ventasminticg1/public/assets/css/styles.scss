@@ -1,0 +1,244 @@
+
+$principal-text: #0086FF;
+$secundary-text: #CBCBCB;
+$hoversAndButtons: #0066D4;
+$color-secundary: #FE69FE;
+$black-color: #212121;
+$gray-color: #f8f1f1;
+
+
+/*body*/
+body{
+  width: auto;
+  margin: auto;
+  height: auto;
+  margin-top: 7em;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle at 95.45% 104.17%, #e459ea 0, #c84ded 16.67%, #a544f0 33.33%, #783cf2 50%, #2538f4 66.67%, #0039f5 83.33%, #008cff 100%);
+}
+
+/*main container*/
+main{
+  margin: 0 auto;
+  width: 40%;
+  border: 3px solid white;
+  border-radius: 30px;
+  height: 650px;
+  background: white;
+  box-shadow: 100px $principal-text;
+}
+/*container principal*/
+section{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*container de imagen*/
+.imagen-login{
+  width: 50%;
+  margin: auto;
+  height: 650px;
+  background: url(../Recursos-graficos/Tech.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px 0px 0pc 30px;
+  float: left;
+}
+/*container de inicio sesion*/
+.inicio-login{
+  width: 50%;
+  margin: auto;
+}
+.logo{
+  width: 110px;
+  height: 110px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.texto-login{ 
+  color: $principal-text;
+  font-size: 20px;
+  font-family:'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  width: 50%;
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  opacity: 35%;
+  border-style: solid;
+  outline: none;
+  background-color: rgb(237, 238, 245);
+}
+.box-password{
+  width: 55%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-password2{
+  width: 55%;
+  margin: auto;
+  margin-top: -30px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+/*toggle de password*/
+.wrapper {
+  margin: auto;
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#switch {
+  visibility: hidden;
+}
+
+.switch_label {
+  position: relative;
+  cursor: pointer;
+  width: 90px;
+  height: 28px;
+  background: #fff;
+  border: 2px solid $secundary-text;
+  opacity: 90%;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+.switch_label:hover {
+  background: #f1f1f1;
+}
+.onf_btn {
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: $secundary-text;
+  transition: 0.2s;
+}
+
+/* checking style */
+#switch:checked+.switch_label {
+  background: $principal-text;
+  border: 2px solid $principal-text;
+}
+
+#switch:checked+.switch_label:hover {
+  background: $principal-text;
+}
+
+/* move */
+#switch:checked+.switch_label .onf_btn {
+  left: 34px;
+  background: #fff;
+  box-shadow: 1px 2px 3px $hoversAndButtons;
+}
+/*fin toggle password*/
+
+.remember-password{
+  font-family: 'Montserrat medium', sans-serif;
+  color: rgba(128, 128, 128, 0.788);
+  opacity: 70%;
+  font-size: 14px;
+}
+.forget-password{
+  font-family: 'Montserrat medium', sans-serif;
+  color: $principal-text;
+  opacity: 70%;
+  font-size: 14px;
+  cursor: pointer;
+  float: left;
+}
+.forget-password:hover{
+  color: $hoversAndButtons;
+}
+.separador{
+  background-color: gray;
+  width: 55%;
+  margin: auto;
+  height: 1px;
+  opacity: 30%;
+}
+a{
+  text-decoration: none;
+}
+.enter-login{
+  width: 100px;
+  margin:auto;
+  display:flex;
+  justify-content: center;
+  padding: 8px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  background-color: $principal-text;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.enter-login:hover{
+  background-color: $hoversAndButtons;
+}
+.img{
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;;
+}
+.google{
+  width: 120px;
+  margin: auto;
+  display:flex;
+  justify-content: center;
+  padding: 4px;
+  font-size: 12px;
+  border-radius: 30px;
+  color: rgba(128, 128, 128, 0.733);
+  opacity: 60%;
+  border: 1px solid rgba(128, 128, 128, 0.726); 
+  cursor: pointer;
+}
+
+.google:hover{
+  border: 1px solid $principal-text;
+  color: $principal-text;
+  background-color: #eef7ff;
+}
+
+/*Responsive*/
+@media screen and (max-width: 1080px){
+    main{
+      width: 80%;
+    }
+}
+
+@media screen and (max-width: 1847px){
+  main{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 920px){
+
+  main{
+    width: 90%;
+  }
+  
+}

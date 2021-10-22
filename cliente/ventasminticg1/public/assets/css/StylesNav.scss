@@ -1,0 +1,269 @@
+$principal-text: #0086FF;
+$secundary-text: #CBCBCB;
+$hoversAndButtons: #0066D4;
+$color-secundary: #FE69FE;
+$black-color: #212121;
+$gray-color: #f8f1f1;
+
+
+$bar-width: 35px;
+$bar-height: 4px;
+$bar-spacing: 13px;
+
+body{
+    margin: 0;
+}
+
+/*barra de navegacion*/
+.nav-bar{
+    top: 0;
+    bottom: -5px;
+    width: 60px;
+    height: 100%;
+    position: fixed;
+    background: $principal-text;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+#herramientas{
+    top: 0;
+    bottom: -5px;
+    margin-left: 60px;
+    padding: 8px;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    background: #E4F2FE;
+    left:-330px;
+    font-family: sans-serif;
+    transition:  all 300ms ease;
+}
+
+#herramientas.active{
+    left: 0;
+}
+ul{
+    margin-left: -35px;
+}
+
+.organizar-herramientas{
+    margin: 20px;
+}
+
+li{
+    padding-top: 20px;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 50%;
+    cursor: pointer;
+    
+}
+
+/*------------------*/
+
+.fa-home{
+    margin-right: 10px;
+}
+
+.fa-trash{
+    margin-right: 10px;
+}
+
+.fa-box-open{
+    margin-right: 10px;
+}
+
+.fa-dollar-sign{
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.fa-users{
+    margin-right: 10px;
+}
+
+.fa-user-check{
+    margin-right: 10px;
+}
+
+.fa-house-user{
+    margin-right: 10px;
+}
+/*------------------*/
+
+
+.fa-home:hover{
+    color: $hoversAndButtons;
+}
+
+.fa-trash:hover{
+    color: $hoversAndButtons;
+}
+
+.fa-box-open:hover{
+    color: $hoversAndButtons;
+}
+
+.fa-dollar-sign:hover{
+    color: $hoversAndButtons;
+}
+
+.fa-users:hover{
+    color: $hoversAndButtons;
+}
+
+.fa-user-check:hover{
+    color: $hoversAndButtons;
+}
+
+.fa-house-user:hover{
+    color: $hoversAndButtons;
+}
+/*------------------*/
+
+a{
+    text-decoration: none;
+    color: $black-color;
+    
+}
+a:hover{
+    color: $hoversAndButtons;
+}
+.tituloH{
+    margin-bottom: -18px;
+    color: $black-color;
+}
+.fecha-hoy{
+    color: $black-color;
+    opacity: 60%;
+}
+.separarH{
+    width: 100%;
+    height: 2px;
+    margin-top: -8px;
+    border-bottom: 1px solid gray;
+    opacity: 50%;
+}
+.separar{
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid gray;
+    opacity: 50%;
+}
+
+/*--------------------------------*/
+.spans{
+    margin: 0;
+}
+.menu-wrapper {
+	position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: $bar-width;
+	height: $bar-height + $bar-spacing*2;
+	cursor: pointer;
+    
+}
+
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: $bar-width;
+    height: $bar-height;
+}
+
+.hamburger-menu {
+	position: relative;
+	transform: translateY($bar-spacing);
+	background: rgba(255, 255, 255, 1);
+	transition: all 0ms 300ms;
+  
+  &.animate {
+    background: rgba(255, 255, 255, 0); 
+  }
+}
+
+.hamburger-menu:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: $bar-spacing;
+	background: rgba(255, 255, 255, 1);
+	transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: $bar-spacing;
+	background: rgba(255, 255, 255, 1);
+	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:after {
+	top: 0;
+	transform: rotate(45deg);
+	transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
+
+.hamburger-menu.animate:before {
+	bottom: 0;
+	transform: rotate(-45deg);
+	transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
+
+
+/*--------------------------------*/
+
+.logo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    margin: auto;
+    width: 55px;
+    height: 55px;
+}
+
+span{
+    position: absolute;
+    bottom: 60px;
+    padding: 17px;
+    margin: auto;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+i:hover{
+    color: #daeeff;
+}
+
+.fa-sign-out-alt{
+    margin-top: 20px;
+}
+
+.fa-question-circle{
+    margin-top: 20px;
+}
+
+.fa-cog{
+    margin-top: 20px;
+}
+.fa-bell{
+    margin-top: 20px;
+}
+
+
+
+.sign-out{
+    color: white;
+}
+
