@@ -7,6 +7,10 @@ const ProductSchema = Schema({
         type: String,
         required: true
     },
+    name: {
+        type: String,
+        required:true
+    },
     description: {
         type: String,
         required:true
@@ -29,7 +33,7 @@ const ProductSchema = Schema({
     },
     category: {
         type: Schema.Types.ObjectId,
-        ref: 'category',
+        ref: 'Category',
         required:true
     }
 

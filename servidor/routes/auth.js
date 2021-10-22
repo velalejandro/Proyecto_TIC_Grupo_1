@@ -1,14 +1,14 @@
 const { Router } = require('express');
-const { check } = require(express-validator);
+const { check } = require('express-validator');
 const { validarCampos } = require('../middlewares/validar-campos');
 const { crearUsuario, loginUsuario, revalidarToken } = require('../controllers/auth');
 const router = Router();
 
 // validacion google
 
-router.post(
+/*router.post(
     '/google/login'
-)
+)*/
 
 router.post(
     '/new',

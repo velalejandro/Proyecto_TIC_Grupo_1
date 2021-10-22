@@ -22,6 +22,7 @@ app.use('/api/users',require('./routes/users'));
 app.use('/api/products',require('./routes/products'));
 app.use('/api/auth',require('./routes/auth'));
 
+
 /**Start server */
 app.listen(process.env.Port, () => {
     console.log(`Servidor ejecutandose por el puerto ${process.env.Port}`);
