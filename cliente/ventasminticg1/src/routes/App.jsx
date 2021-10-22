@@ -5,7 +5,10 @@ import Login from '../containers/Login';
 import RecoveryPass from '../containers/RecoveryPass';
 import Home from '../pages/Home';
 import NotFound from '../pages/NotFound';
-import '../styles/styles.css';
+import Usuarios from '../pages/Usuarios'
+import Ventas from '../pages/Ventas';
+import Productos from '../pages/Productos'
+
 
 const App = () =>{
   return(
@@ -15,7 +18,11 @@ const App = () =>{
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component ={Login} />
           <Route exact path="/recovery-password" component={RecoveryPass} />
+          <Route exact path="/usuarios" component ={Usuarios} />
+          <Route exact path= "/ventas" component ={Ventas} />
+          <Route exact path= "/productos" component ={Productos} />
           <Route path="*" component={NotFound} />
+          
       </Switch>
     </Layout>
     </BrowserRouter>

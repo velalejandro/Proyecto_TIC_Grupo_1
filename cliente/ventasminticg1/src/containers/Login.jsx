@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/styles.css';
-import '../Recursos-graficos/Google.png';
-import '../Recursos-graficos/logo-color.png';
+
 
 const Login = () => {
     return(
