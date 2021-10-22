@@ -1,9 +1,13 @@
 import React from 'react'
+import SideBar from '../components/SideBar'
 import '../styles/bootstrap.css'
 
 const Productos = ()=>{
     return (
       <div>
+        <SideBar />
+        <div id="exteriorTabla">
+        <div className="tabla">
         <div id="TableBoostrap">
           <table className="table table-hover">
             <tbody>
@@ -188,6 +192,8 @@ const Productos = ()=>{
           </div>
         </div>
         <hr />
+      </div>
+      </div>
       </div>
     );
 }

@@ -36,7 +36,7 @@ const SideBar = () =>{
                   </Link>
                 </li>
                 <li>
-                  <Link to="/ListarVentas.html">
+                  <Link to="/ventas">
                     <i className="fas fa-dollar-sign" />
                     Ventas
                   </Link>
