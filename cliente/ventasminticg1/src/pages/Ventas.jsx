@@ -1,7 +1,7 @@
 import React from 'react'
 import SideBar from '../components/SideBar'
 import '../styles/bootstrap.css'
-
+/*hola mundo otra vez*/
 const Ventas = () =>{
     return(
         <div>
