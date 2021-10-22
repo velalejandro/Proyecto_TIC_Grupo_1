@@ -56,6 +56,16 @@ li {
   opacity: 50%;
   cursor: pointer;
 }
+.itemBar {
+  padding-top: 20px;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+  font-size: 15px;
+  font-weight: 700;
+  opacity: 50%;
+  cursor: pointer;
+}
 
 /*------------------*/
 .fa-home {

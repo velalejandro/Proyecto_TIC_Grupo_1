@@ -6,9 +6,10 @@ import '../styles/bootstrap.css'
 
 const Usuarios = () =>{
     return (
-        
       <div>
-        <div><SideBar /></div>
+        <SideBar />
+      <div id="exteriorTabla">
+        
         <div className="container tabla">
           <div id="agregar" className="row">
             <div className="col-12 text-center">
@@ -266,6 +267,7 @@ const Usuarios = () =>{
           </div>
         </div>
       </div>
+      </div> 
     );
 
 }

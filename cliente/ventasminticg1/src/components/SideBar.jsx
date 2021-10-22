@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/StylesNav.css'
+import '../styles/StylesNav.css';
 
 
 const SideBar = () =>{
@@ -15,13 +15,13 @@ const SideBar = () =>{
               <div className="separarH" />
               <ul>
                 <li>
-                  <Link to= "/">
+                  <Link to="/">
                     <i className="fas fa-home" />
                     Inicio
                   </Link>
                 </li>
                 <li>
-                  <Link to="/login">
+                  <Link to="/">
                     <i className="fas fa-trash" />
                     Papelera
                   </Link>
@@ -29,14 +29,14 @@ const SideBar = () =>{
               </ul>
               <div className="separar" />
               <ul>
-                <li>
+                <li clasName="itemBar">
                   <Link to="/productos">
                     <i className="fas fa-box-open" />
                     Productos
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">
+                  <Link to="/ListarVentas.html">
                     <i className="fas fa-dollar-sign" />
                     Ventas
                   </Link>
@@ -62,7 +62,7 @@ const SideBar = () =>{
               </ul>
             </div>
           </nav>
-        </div>
+          </div>
         
     );
 }
