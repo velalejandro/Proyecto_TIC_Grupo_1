@@ -13,7 +13,7 @@ dbConnection();
 app.use(express.static('public'));
 
 
-
+//Lectura y parseo del body
 app.use(express.json());
 
 /** Routes */

@@ -22,10 +22,10 @@ const getProducts = async( req, resp = response ) => {
 
 const setProduct = async ( req, resp = response ) => {
     
-    const producto = new Producto(req,body);
+    const producto = new Producto(req.body);
 
     try {
-        const productSave = await producto.Save();
+        const productSave = await producto.save();
         resp.status(201).json({
             ok:true,
             msg: 'Product created satisfactorily',
