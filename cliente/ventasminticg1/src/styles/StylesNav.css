@@ -3,7 +3,7 @@ body {
 }
 
 /*barra de navegacion*/
-.nav-bar {
+#nav-bar {
   top: 0;
   bottom: -5px;
   width: 60px;
@@ -23,6 +23,7 @@ body {
 
 #herramientas {
   top: 0;
+  left: 60px;
   bottom: -5px;
   padding: 8px;
   width: 250px;
@@ -56,16 +57,7 @@ li {
   opacity: 50%;
   cursor: pointer;
 }
-.itemBar {
-  padding-top: 20px;
-  text-decoration: none;
-  outline: none;
-  list-style: none;
-  font-size: 15px;
-  font-weight: 700;
-  opacity: 50%;
-  cursor: pointer;
-}
+
 
 /*------------------*/
 .fa-home {
@@ -125,24 +117,48 @@ li {
 .fa-house-user:hover {
   color: #0066D4;
 }
+/*------------------*/
+
 
 /*------------------*/
-a {
+
+
+.inicio{
   text-decoration: none;
   color: #212121;
 }
 
-a:hover {
-  color: #0066D4;
+.papelera{
+  text-decoration: none;
+  color: #212121;
 }
 
-.tituloH {
-  margin-bottom: -18px;
+.productos{
+  text-decoration: none;
   color: #212121;
+}
+.ventas{
+  text-decoration: none;
+  color: #212121;
+}
+.usuarios{
+  text-decoration: none;
+  color: #212121;
+}
+
+
+
+.tituloH {
+  margin-bottom: 1px;
+  color: #212121;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .fecha-hoy {
+  margin-bottom: 20px;
   color: #212121;
+  font-size: 16px;
   opacity: 60%;
 }
 
@@ -162,10 +178,6 @@ a:hover {
 }
 
 /*--------------------------------*/
-.spans {
-  margin: 0;
-}
-
 .menu-wrapper {
   position: absolute;
   top: 25px;
@@ -262,27 +274,61 @@ span {
   cursor: pointer;
 }
 
-i:hover {
-  color: #daeeff;
-}
+
 
 .fa-sign-out-alt {
-  margin-top: 20px;
+  position: absolute;
+  bottom: 60px;
+  padding: 17px;
+  margin: auto;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
 }
 
 .fa-question-circle {
-  margin-top: 20px;
+  position: absolute;
+  bottom: 180px;
+  padding: 17px;
+  margin: auto;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
 }
 
 .fa-cog {
-  margin-top: 20px;
+  position: absolute;
+  bottom: 120px;
+  padding: 17px;
+  margin: auto;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
 }
 
 .fa-bell {
-  margin-top: 20px;
+  position: absolute;
+  bottom: 240px;
+  padding: 17px;
+  margin: auto;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+.fa-sign-out-alt:hover {
+  color: #d6eaff;
 }
 
-.sign-out {
-  color: white;
+.fa-question-circle:hover {
+  color: #b8d9fc;
 }
+
+.fa-cog:hover {
+  color: #b8d9fc;
+}
+
+.fa-bell:hover {
+  color: #b8d9fc;
+}
+
 /*# sourceMappingURL=StylesNav.css.map */

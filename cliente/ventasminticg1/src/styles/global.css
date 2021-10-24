@@ -1,18 +1,40 @@
+body{
+    background: white;
+}
+h1{
+    color: rgb(47, 124, 240);
+}
+.titulo{
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    margin-bottom: -70px;
+    margin-top: 30px;
+    color: rgb(47, 124, 240);
+    border: 1px solid rgb(47, 124, 240);
+}
 .tabla{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding-top: 20px;
-    padding-bottom: 20px;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+    padding-bottom: 2px;
+    box-shadow: 5px 5px 5px  rgba(151, 151, 151, 0.082);
+    border: 1px solid rgb(210, 217, 255);
     padding-left: 80px;
     padding-right: 30px;
     position: relative;
+  
 }
 #exteriorTabla{
     margin-left: 250px;
     padding: 60px;
+
 }
 
 #itemBar {
@@ -24,4 +46,5 @@
     font-weight: 700;
     opacity: 50%;
     cursor: pointer;
+ 
   }

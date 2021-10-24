@@ -7,10 +7,11 @@ import '../styles/bootstrap.css'
 const Usuarios = () =>{
     return (
       <div>
+        <h1 className="titulo">Usuarios</h1>
         <SideBar />
       <div id="exteriorTabla">
         
-        <div className="container tabla">
+        <div className="tabla">
           <div id="agregar" className="row">
             <div className="col-12 text-center">
               <h4 className="text-primary">Gestionar Roles</h4>
