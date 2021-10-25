@@ -18,7 +18,7 @@ main {
   height: 650px;
   background: white;
   -webkit-box-shadow: 100px #0086FF;
-          box-shadow: 100px #0086FF;
+  box-shadow: 100px #0086FF;
 }
 
 /*container principal*/

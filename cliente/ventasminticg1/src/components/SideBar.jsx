@@ -2,10 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/StylesNav.css';
 
-
 const SideBar = () =>{
     return (
       <div>
+        <div id="nav-bar">
+          <i class="fas fa-sign-out-alt"></i>
+          <i class="fas fa-question-circle"></i>
+          <i class="fas fa-cog"></i>
+          <i class="fas fa-bell"></i>
+            <div class="spans">
+              <div class="menu-wrapper">
+                <div class="hamburger-menu"></div></div></div>
+        </div>
           <nav id="herramientas">
             <div className="organizar-herramientas">
               <h3 className="tituloH">Herramientas</h3>
@@ -15,13 +23,13 @@ const SideBar = () =>{
               <div className="separarH" />
               <ul>
                 <li>
-                  <Link to="/">
+                  <Link className="inicio" to="/">
                     <i className="fas fa-home" />
                     Inicio
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">
+                  <Link className="papelera" to="/">
                     <i className="fas fa-trash" />
                     Papelera
                   </Link>
@@ -29,41 +37,32 @@ const SideBar = () =>{
               </ul>
               <div className="separar" />
               <ul>
-                <li clasName="itemBar">
-                  <Link to="/productos">
+                <li>
+                  <Link className="productos" to="/productos">
                     <i className="fas fa-box-open" />
                     Productos
                   </Link>
                 </li>
                 <li>
-                  <Link to="/ventas">
+                  <Link className="ventas" to="/ventas">
                     <i className="fas fa-dollar-sign" />
                     Ventas
                   </Link>
                 </li>
                 <li>
-                  <Link to="/usuarios">
+                  <Link className="usuarios" to="/usuarios">
                     <i className="fas fa-users" />
-                    Administrar Usuarios
+                    Usuarios
                   </Link>
                 </li>
-                <li>
-                  <Link to="/">
-                    <i className="fas fa-user-check" />
-                    Administrar Vendedores
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/">
-                    <i className="fas fa-house-user" />
-                    Administrar Roles
-                  </Link>
-                </li>
+                
               </ul>
             </div>
           </nav>
           </div>
+
         
     );
 }
+
 export default SideBar

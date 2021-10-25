@@ -1,11 +1,11 @@
 import React from 'react'
 import SideBar from '../components/SideBar'
 import '../styles/bootstrap.css'
-/*HOLA MUMDO */
 
 const Ventas = () =>{
     return(
         <div>
+          <h1 className="titulo">Ventas</h1>
         <SideBar />
         <div id="exteriorTabla">
         <div className="tabla">

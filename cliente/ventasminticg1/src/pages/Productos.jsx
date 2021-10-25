@@ -5,6 +5,7 @@ import '../styles/bootstrap.css'
 const Productos = ()=>{
     return (
       <div>
+        <h1 className="titulo">Lista de Productos</h1>
         <SideBar />
         <div id="exteriorTabla">
         <div className="tabla">
