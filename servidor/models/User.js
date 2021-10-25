@@ -22,10 +22,19 @@ const UserSchema = Schema({
         type: Boolean,
         required: true
     },
+    email: {
+        type: String,
+        required: true,
+        unique: true
+    },
     registeredDate: {
         type: Date,
         default: Date.now
     }
+    
+
+
 });
 
 module.exports = model('User',UserSchema);
+// var schema = new Schema({name:string}, // eesta linea // { ollection: 'actores});
