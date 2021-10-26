@@ -1,6 +1,6 @@
 const { response } = require('express');
 const User = require('../models/User');
-const role = require('../models/Role')
+const role = require('../models/Role');
 
 
 const getUsers = async ( req, resp = response ) => {
