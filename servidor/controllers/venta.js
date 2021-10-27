@@ -41,3 +41,8 @@ const getVentas = async( req, resp = response ) => {
         ventas
     });
 }
+
+module.exports = {
+    setVenta,
+    getVentas
+}

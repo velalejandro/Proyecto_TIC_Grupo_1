@@ -1,11 +1,14 @@
-const { Schema, model, Schema, Schema } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const VentaSchema = Schema({
+
     fecha : {
         type: Date,
         default: Date.now
     },
-    valorTotal: Number,
+    valor_total : {
+        type: Number
+    }, 
     cliente : {
         type: Schema.Types.ObjectId,
         ref: "User"
@@ -19,7 +22,9 @@ const VentaSchema = Schema({
             type: Schema.Types.ObjectId,
             ref: "Product"
         },
-        cantidad : Number
+        cantidad : {
+            type: Number
+        } 
     }]
 
 });

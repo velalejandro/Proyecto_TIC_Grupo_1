@@ -1,4 +1,4 @@
-const {getVentas} = require('../controllers/venta')
+const {setVenta,getVentas} = require('../controllers/venta')
 const { validarJWT } = require('../middlewares/validar-jwt');
 const { Router } = require('express');
 const { check } = require('express-validator');
@@ -11,13 +11,12 @@ router.get('/',getVentas);
 
 router.post(
     '/',
-    // [
-    //     check('code','El codigo del producto es obligatorio').not().isEmpty(),
-    //     check('name','El nombre del producto es obligatorio').not().isEmpty(),
-    //     check('description','La descripcion del producto es obligatoria').not().isEmpty(),
-    //     check('category','La categoria del producto es obligatoria').not().isEmpty(),
-    //     validarCampos
-    // ],
+    [
+        check('valor_total','El valor total es obligatorio').not().isEmpty(),
+        check('cliente','El cliente es obligatorio').not().isEmpty(),
+        check('vendedor','El vendedor es obligatorio').not().isEmpty(),
+        validarCampos
+    ],
     setVenta);
 
 
