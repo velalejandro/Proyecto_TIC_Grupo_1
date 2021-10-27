@@ -1,12 +1,14 @@
 /*body*/
-body {
-  width: auto;
+body{
   margin: auto;
-  height: auto;
-  margin-top: 7em;
-  background-attachment: fixed;
+}
+.fondo{
+  width: 100%;
+  padding: 20px;
+  height:100vh ;
+  background-attachment: fixed !important;
   background-repeat: no-repeat;
-  background-image: radial-gradient(circle at 95.45% 104.17%, #e459ea 0, #c84ded 16.67%, #a544f0 33.33%, #783cf2 50%, #2538f4 66.67%, #0039f5 83.33%, #008cff 100%);
+  background-image: radial-gradient(circle at 95.45% 104.17%, #e459ea 0, #c84ded 16.67%, #a544f0 33.33%, #783cf2 50%, #2538f4 66.67%, #0039f5 83.33%, #008cff 100%) !important;
 }
 
 /*main container*/
@@ -18,12 +20,12 @@ main {
   height: 650px;
   background: white;
   -webkit-box-shadow: 100px #0086FF;
-  box-shadow: 100px #0086FF;
+          box-shadow: 100px #0086FF;
+          
 }
-
 /*container principal*/
 section {
-  margin: auto;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,10 +38,9 @@ section {
 }
 
 /*container de imagen*/
-main section .imagen-login {
+.imagen-login {
   width: 50%;
-  margin: auto;
-  height: 650px;
+  height: 644px;
   background: url(../Recursos-graficos/Tech.png);
   background-size: cover;
   background-position: center;
@@ -48,35 +49,19 @@ main section .imagen-login {
 }
 
 /*container de inicio sesion*/
-main section .inicio-login {
+.inicio-login {
   width: 50%;
   margin: auto;
+  
 }
 
-.tabla{
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
-    padding-left: 30px;
-    padding-right: 30px;
-}
-main section div .logo {
-  width: 110px;
-  height: 110px;
+.logoI{
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 80px;
+  height: 80px;
+  background: url(../Recursos-graficos/logo-color.png);
+  background-size: cover;
+  margin-bottom: 15px;
 }
 
 .texto-login {
@@ -93,25 +78,25 @@ main section div .logo {
       -ms-flex-align: center;
           align-items: center;
 }
-
+.inputs{
+  width: 100%;
+  padding: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  
+}
 input {
-  width: 50%;
-  margin: auto;
-  padding: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width: 100%;
+  padding: 13px;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
   opacity: 35%;
   border-style: solid;
   outline: none;
   background-color: #edeef5;
+  
 }
 
 .box-password {
@@ -165,7 +150,7 @@ input {
 .switch_label {
   position: relative;
   cursor: pointer;
-  width: 90px;
+  width: 120px;
   height: 28px;
   background: #fff;
   border: 2px solid #CBCBCB;
@@ -181,7 +166,7 @@ input {
 
 .onf_btn {
   position: absolute;
-  top: 4px;
+  top: 2px;
   left: 3px;
   width: 20px;
   height: 20px;
@@ -214,16 +199,18 @@ input {
   font-family: 'Montserrat medium', sans-serif;
   color: rgba(128, 128, 128, 0.788);
   opacity: 70%;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .forget-password {
   font-family: 'Montserrat medium', sans-serif;
   color: #0086FF;
+  margin-top: 40px;
   opacity: 70%;
-  font-size: 14px;
+  font-size: 13px;
   cursor: pointer;
   float: left;
+  
 }
 
 .forget-password:hover {
@@ -236,10 +223,6 @@ input {
   margin: auto;
   height: 1px;
   opacity: 30%;
-}
-
-a {
-  text-decoration: none;
 }
 
 .enter-login {
@@ -293,6 +276,22 @@ a {
   color: #0086FF;
   background-color: #eef7ff;
 }
+
+/*Error page*/
+.error{
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 700px;
+  background: url(../Recursos-graficos/Na_June_67\ [Convertido].png);
+  background-size: cover;
+  margin-bottom: 15px;
+}
+/*Error page*/
+
 
 /*Responsive*/
 @media screen and (max-width: 1080px) {

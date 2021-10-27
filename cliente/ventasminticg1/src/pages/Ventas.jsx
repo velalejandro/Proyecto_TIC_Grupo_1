@@ -6,7 +6,7 @@ const Ventas = () =>{
     return(
         <div>
           <h1 className="titulo">Ventas</h1>
-        <SideBar />
+        
         <div id="exteriorTabla">
         <div className="tabla">
         <div id="TableBoostrap">
@@ -196,6 +196,7 @@ const Ventas = () =>{
         <hr />
       </div>
       </div>
+      <SideBar />
       </div>
       
 

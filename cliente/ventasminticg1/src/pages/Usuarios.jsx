@@ -34,7 +34,7 @@ class Usuarios extends Component {
     return (
       <div>
         <h1 className="titulo">Usuarios</h1>
-        <SideBar />
+       
       <div id="exteriorTabla">
         
         <div className="tabla">
@@ -262,6 +262,7 @@ class Usuarios extends Component {
           </div>
         </div>
       </div>
+      <SideBar />
       </div> 
     );
   }

@@ -31,7 +31,7 @@ class Productos extends Component {
     return (
       <div>
         <h1 className="titulo">Lista de Productos</h1>
-        <SideBar />
+        
         <div id="exteriorTabla">
         <div className="tabla">
         <div id="TableBoostrap">
@@ -127,6 +127,7 @@ class Productos extends Component {
         <hr />
       </div>
       </div>
+      <SideBar />
       </div>
     );
   }
