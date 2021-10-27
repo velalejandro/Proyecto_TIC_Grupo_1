@@ -1,8 +1,33 @@
-import React from 'react'
+import React, { Component } from 'react'
 import SideBar from '../components/SideBar'
 import '../styles/bootstrap.css'
+import Axios from "axios";
 
-const Productos = ()=>{
+// const Productos = ()=>{
+class Productos extends Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        productos: [],
+      }
+      this.getProductos = this.getProductos.bind(this);
+    }
+  
+    componentDidMount() {
+      this.getProductos();
+    }
+  
+    getProductos = async () => {
+      await Axios.get('http://localhost:4001/api/products')
+        .then(res => {
+          this.setState({ productos: res.data.productos});
+          console.log(res.data.productos);
+        }).catch((error) => {
+          console.log(error);
+        });
+    }
+
+    render() {
     return (
       <div>
         <h1 className="titulo">Lista de Productos</h1>
@@ -10,127 +35,34 @@ const Productos = ()=>{
         <div id="exteriorTabla">
         <div className="tabla">
         <div id="TableBoostrap">
+            <input class="form-control" value={this.state.text} onChange={(text) => this.filter(text)}/>
+          
           <table className="table table-hover">
             <tbody>
               <tr>
-                <th>PRODUCTO</th>
                 <th>CÓDIGO</th>
                 <th>FECHA</th>
-                <th>CANTIDAD</th>
-                <th>VALOR VENTA</th>
+                <th>NOMBRE</th>
+                <th>DESCRIPTCION</th>
+                <th>STOCK</th>
+                <th>PRECIO ENTRANTE</th>
+                <th>PRECIO SALIENTE</th>
+                <th>CATEGORIA</th>
               </tr>
-              <tr>
-                <td>Cables cohaxiales</td>
-                <td>001</td>
-                <td>01/09/2021</td>
-                <td>38</td>
-                <td>70.000</td>
-              </tr>
-              <tr>
-                <td>Cables cohaxiales</td>
-                <td>001</td>
-                <td>01/09/2021</td>
-                <td>38</td>
-                <td>70.000</td>
-              </tr>
-              <tr>
-                <td>Cables cohaxiales</td>
-                <td>001</td>
-                <td>01/09/2021</td>
-                <td>38</td>
-                <td>70.000</td>
-              </tr>
-              <tr>
-                <td>Cables cohaxiales</td>
-                <td>001</td>
-                <td>01/09/2021</td>
-                <td>38</td>
-                <td>70.000</td>
-              </tr>
-              <tr>
-                <td>Cables cohaxiales</td>
-                <td>001</td>
-                <td>01/09/2021</td>
-                <td>38</td>
-                <td>70.000</td>
-              </tr>
-              <tr>
-                <td>Cables cohaxiales</td>
-                <td>001</td>
-                <td>01/09/2021</td>
-                <td>38</td>
-                <td>70.000</td>
-              </tr>
-              <tr>
-                <td>Cables cohaxiales</td>
-                <td>001</td>
-                <td>01/09/2021</td>
-                <td>38</td>
-                <td>70.000</td>
-              </tr>
-              <tr>
-                <td>Cables cohaxiales</td>
-                <td>001</td>
-                <td>01/09/2021</td>
-                <td>38</td>
-                <td>70.000</td>
-              </tr>
-              <tr>
-                <td>Cables cohaxiales</td>
-                <td>001</td>
-                <td>01/09/2021</td>
-                <td>38</td>
-                <td>70.000</td>
-              </tr>
-              <tr>
-                <td>Cables cohaxiales</td>
-                <td>001</td>
-                <td>01/09/2021</td>
-                <td>38</td>
-                <td>70.000</td>
-              </tr>
-              <tr>
-                <td>Cables cohaxiales</td>
-                <td>001</td>
-                <td>01/09/2021</td>
-                <td>38</td>
-                <td>70.000</td>
-              </tr>
-              <tr>
-                <td>Cables cohaxiales</td>
-                <td>001</td>
-                <td>01/09/2021</td>
-                <td>38</td>
-                <td>70.000</td>
-              </tr>
-              <tr>
-                <td>Cables cohaxiales</td>
-                <td>001</td>
-                <td>01/09/2021</td>
-                <td>38</td>
-                <td>70.000</td>
-              </tr>
-              <tr>
-                <td>Cables cohaxiales</td>
-                <td>001</td>
-                <td>01/09/2021</td>
-                <td>38</td>
-                <td>70.000</td>
-              </tr>
-              <tr>
-                <td>Cables cohaxiales</td>
-                <td>001</td>
-                <td>01/09/2021</td>
-                <td>38</td>
-                <td>70.000</td>
-              </tr>
-              <tr>
-                <td>Cables cohaxiales</td>
-                <td>001</td>
-                <td>01/09/2021</td>
-                <td>38</td>
-                <td>70.000</td>
-              </tr>
+                  {
+                    this.state.productos.map(producto =>
+                      <tr key={producto.id}>
+                        <th>{producto.code}</th>
+                        <th>{producto.registration_date}</th>
+                        <th>{producto.name}</th>
+                        <th>{producto.description}</th>
+                        <th>{producto.stock}</th>
+                        <th>{producto.purchase_price}</th>
+                        <th>{producto.sale_price}</th>
+                        <th>{producto.category.name}</th>
+                      </tr>
+                    )
+                  }
             </tbody>
           </table>
         </div>
@@ -197,5 +129,6 @@ const Productos = ()=>{
       </div>
       </div>
     );
+  }
 }
 export default Productos

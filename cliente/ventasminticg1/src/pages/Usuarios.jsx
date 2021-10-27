@@ -1,10 +1,36 @@
 
-import React from 'react'
+import React, { Component } from 'react'
 import SideBar from '../components/SideBar'
 import '../styles/bootstrap.css'
+import Axios from "axios";
 
 
-const Usuarios = () =>{
+class Usuarios extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      usuarios: [],
+    }
+    this.getUsuarios = this.getUsuarios.bind(this);
+  }
+
+  componentDidMount() {
+    this.getUsuarios();
+  }
+
+  getUsuarios = async () => {
+    await Axios.get('http://localhost:4001/api/users/list')
+      .then(res => {
+        this.setState({ usuarios: res.data.users});
+        console.log(res.data.users);
+      }).catch((error) => {
+        console.log(error);
+      });
+  }
+
+
+  render() {
     return (
       <div>
         <h1 className="titulo">Usuarios</h1>
@@ -149,59 +175,27 @@ const Usuarios = () =>{
                       </th>
                     </tr>
                     <tr>
-                      <th>#</th>
+                      <th>Codigo</th>
                       <th>Nombre</th>
                       <th>Username</th>
+                      <th>Correo</th>
                       <th>Rol</th>
                       <th>Select</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>Natalia</td>
-                      <td>natalia.luque</td>
-                      <td>Vendedor</td>
-                      <td>
+                  {
+                    this.state.usuarios.map(user =>
+                      <tr key={user.id}>
+                        <th>{user._id}</th>
+                        <th>{user.name}</th>
+                        <th>{user.user}</th>
+                        <th>{user.email}</th>
+                        <th>{user.role.name}</th>
                         <input type="radio" name="userRadios" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Neyder</td>
-                      <td>neyder.perilla</td>
-                      <td>Cliente</td>
-                      <td>
-                        <input type="radio" name="userRadios" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Jhon</td>
-                      <td>jhon.novoa</td>
-                      <td>Cliente</td>
-                      <td>
-                        <input type="radio" name="userRadios" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Alejandro</td>
-                      <td>alejandro.vela</td>
-                      <td>Administrador</td>
-                      <td>
-                        <input type="radio" name="userRadios" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>Omar</td>
-                      <td>omar.zambrano</td>
-                      <td>Cliente</td>
-                      <td>
-                        <input type="radio" name="userRadios" />
-                      </td>
-                    </tr>
+                      </tr>
+                    )
+                  }
                   </tbody>
                 </table>
                 <div className="input-group-append">
@@ -270,6 +264,6 @@ const Usuarios = () =>{
       </div>
       </div> 
     );
-
+  }
 }
 export default Usuarios;
