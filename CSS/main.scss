@@ -1,0 +1,112 @@
+$colorLt: black;
+$colorAzul: #0066d4;
+$colorBlanco:#f4f4f4;
+$colorBaige: #e4f2fe;
+$colorGris: #cbcbcb;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#Columna{
+    position: absolute;
+    width: 3.5%;
+    height: 100%;
+    background-color: $colorAzul;
+    .toggle-btn{
+        position: absolute;
+        left: 10%;
+        top: 1%;
+        cursor: pointer;
+        background-color: $colorAzul;
+        color: $colorBlanco;
+        span{
+            display: block;
+            width: 50%;
+            text-align: center;
+            font-size: 30px;
+
+        }
+    }
+    .Linea{
+        position: absolute;
+        top: 9.1%;
+        width: 100%;
+        height: 1px;
+        background-color: $colorBaige;
+    }
+}
+
+#sidebar{
+    position: fixed;
+    width: 13%;
+    height: 100%;
+    background-color:$colorBaige;
+    left: -230px;
+    transition: all 500ms linear;
+
+    .logo{
+        padding: 0.7rem 1rem;
+    }
+
+    .lineaTX{
+        padding: 1px;
+        width: 100%;
+        background-color: $colorGris;
+    }
+
+    .list-group-item{
+        background-color: $colorBaige;
+        font-size: 70%;
+    }
+}
+
+#sidebar.active{
+    left: 55px;
+}
+
+.navbar{
+    position: absolute;
+    width: 96.5%;
+    left: 3.5%;
+    height: 7%;
+    transition: all 500ms linear;
+}
+
+#navbarr{
+    .navlink{
+        .active{
+        font-family:'Montserrat', sans-serif;
+        text-decoration: none;
+        font-size: 120%;
+        }
+        .search1{
+            float: right;
+            // background-color: hotpink;
+        }
+    }
+}
+
+#navbarr.active{
+    left: 16.5%;
+    width: 83%;
+    height: 7%;
+}
+
+// Tabla de listar usuarios
+#TableBoostrap{
+    position: absolute;
+    top: 9%;
+    left: 8%;
+    width: 100%;
+    height:auto;
+    max-width: 90%;
+    transition: all 500ms linear;
+    // background-color: rgb(5, 10, 1);
+}
+
+#TableBoostrap.active{
+    left: 18%;
+    max-width: 80%;
+}
