@@ -8,7 +8,7 @@ const Usuarios = () =>{
     return (
       <div>
         <h1 className="titulo">Usuarios</h1>
-        <SideBar />
+       
       <div id="exteriorTabla">
         
         <div className="tabla">
@@ -268,6 +268,7 @@ const Usuarios = () =>{
           </div>
         </div>
       </div>
+      <SideBar />
       </div> 
     );
 
