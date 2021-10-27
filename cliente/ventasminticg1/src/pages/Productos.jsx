@@ -27,7 +27,16 @@ class Productos extends Component {
         });
     }
 
+    onSubmit = async e =>{
+      e.preventDefault();
+      await Axios.post('http://localhost:4001/api/products',{
+        productos: this.state.productos
+      })
+      
+    }
+
     render() {
+    const { code, name, description, stock, purchase_price, sale_price } = this.state
     return (
       <div>
         <h1 className="titulo">Lista de Productos</h1>
@@ -71,15 +80,16 @@ class Productos extends Component {
         <div className="row  marginFormu">
           <h1 className="tituloForm">PRODUCTOS</h1>
           <div className="col-12">
-            <form className="row g-3">
+            <form onSubmit={this.onSubmit} className="row g-3">
               <div className="col-md-6">
                 <label htmlFor="inputProductCode" className="form-label">
                   Código del Producto
                 </label>
                 <input
                   className="form-control"
-                  type="number"
+                  type="text"
                   name="inputProductCode"
+                  value={code}
                 />
               </div>
               <div className="col-md-6">
@@ -90,33 +100,53 @@ class Productos extends Component {
                   className="form-control"
                   type="text"
                   name="inputProductCode"
+                  value={name}
                 />
               </div>
               <div className="col-md-6">
-                <label htmlFor="cantidadProduct" className="form-label">
-                  Valor Unitario:
+                <label htmlFor="descripProduct" className="form-label">
+                  Descripción
                 </label>
-                <input type="number" className="form-control" />
+                <input
+                  className="form-control"
+                  type="text"
+                  name="inputProductDescrip"
+                  value={description}
+                />
               </div>
               <div className="col-md-6">
-                <label htmlFor="cantidadProduct" className="form-label">
-                  Estado:
+                <label htmlFor="stockProduct" className="form-label">
+                  Stock
                 </label>
-                <select
+                <input
                   className="form-control"
-                  aria-label=".form-select-sm example"
-                >
-                  <option selected="selected">Seleccione</option>
-                  <option>Disponible</option>
-                  <option>No Disponible</option>
-                </select>
+                  type="number"
+                  name="inputProductStock"
+                  value={stock}
+                />
+              </div>
+              <div className="col-md-6">
+                <label htmlFor="inPriceProduct" className="form-label">
+                  Precio entrante:
+                </label>
+                <input type="number" className="form-control" value={purchase_price} />
+              </div>
+              <div className="col-md-6">
+                <label htmlFor="outPriceProduct" className="form-label">
+                  Precio saliente:
+                </label>
+                <input type="number" className="form-control" value={sale_price} />
+              </div>
+              <div className="col-md-6">
+                <label htmlFor="categoProduct" className="form-label">
+                  Categoría:
+                </label>
+                <input type="text" className="form-control" />
               </div>
               <div className="col-12" id="botonAdd">
                 <button
                   type="submit"
                   className="btn btn-primary"
-                  id="saveEdit"
-                  onclick="clickChange()"
                 >
                   Añadir
                 </button>
