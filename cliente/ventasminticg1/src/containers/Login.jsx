@@ -1,10 +1,20 @@
 import React from 'react';
-import google from '../Recursos-graficos/Google.png'
-
+import Productos from '../pages/Productos';
+import GoogleLogin from 'react-google-login';
 import '../styles/styles.css';
 
 
+
 const Login = () => {
+  function inicio(props) {
+    const isLoggedIn = props.isLoggedIn;
+    if (isLoggedIn) {
+      return <Productos />;
+    }
+    return <Login />;
+  }
+  
+
     return(
       <div className="fondo">
         <main>
@@ -34,10 +44,17 @@ const Login = () => {
             </div>
             <div className="separador" />
             <br />
-            <button className="google">
-              <div className="imagen-google"><img className="img" src={google} alt="google" /></div>GOOGLE</button>
+            <div className="google">
+            <GoogleLogin className="google-login" 
+              clientId="304541528584-pu6tp6dmmvtahco73t0qqp43aise7psn.apps.googleusercontent.com"
+              buttonText="Entrar con Google"
+              onSuccess={inicio}
+              onFailure={false}
+              cookiePolicy={'single_host_origin'}
+            />
+              </div>
             <br />
-            <a href="ListarVentas.html"><button className="enter-login">Entrar</button></a>
+            <a href="/Productos"><button className="enter-login">Entrar</button></a>
           </div> 
         </section>
       </main>
